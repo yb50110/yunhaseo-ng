@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { Pepoints } from './pepoints';
-import { Safehr } from './safehr';
+import { Pepoints } from './development/pepoints';
+import { Safehr } from './development/safehr';
+
+import { Spjikergoed } from './design/spijkergoed';
+// import { Swan } from './design/swan';
+
+// import { Petiteaparis } from './illustration/petiteaparis';
 
 @Component({
   selector: 'app-project',
@@ -26,6 +31,17 @@ export class ProjectComponent implements OnInit {
       case 'safehr':
         this.projectData = Safehr;
         break;
+
+      case 'spijkergoed':
+        this.projectData = Spjikergoed;
+        break;
+      // case 'swam':
+      //   this.projectData = Swan;
+      //   break;
+      //
+      // case 'petiteaparis':
+      //   this.projectData = Petiteaparis;
+      //   break;
     }
   }
 

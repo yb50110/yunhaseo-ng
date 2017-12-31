@@ -1,7 +1,8 @@
 export const Pepoints: pepoints[] = [
     {
         category: 'development',
-        mainImage: 'pepoints/main.png',
+        mainImageUrl: 'pepoints/main.png',
+        mainImageSize: 'contain',
         title: 'PE Points Web Application',
         year: '2016',
         company: 'B302: A Creative Media Mob',
@@ -21,11 +22,13 @@ export const Pepoints: pepoints[] = [
         images: [
             {
                 url: 'pepoints/Frontal.png',
-                size: 'half'
+                size: 'half',
+                backgroundSize: 'contain'
             },
             {
                 url: 'pepoints/Frontal2.png',
-                size: 'half'
+                size: 'half',
+                backgroundSize: 'contain'
             }
         ],
         tools: [
@@ -58,7 +61,8 @@ export const Pepoints: pepoints[] = [
 
 interface pepoints {
     category: string;
-    mainImage: string;
+    mainImageUrl: string;
+    mainImageSize: string;
     title: string;
     year: string;
     company: string;
@@ -77,6 +81,7 @@ interface eachContent {
 interface eachImage {
     url: string;
     size: string;
+    backgroundSize: string;
 }
 
 interface eachTool {

@@ -1,7 +1,8 @@
 export const Safehr: safehr[] = [
     {
         category: 'development',
-        mainImage: 'safehr/main.png',
+        mainImageUrl: 'safehr/main.png',
+        mainImageSize: 'contain',
         title: 'SAFEHR Portal and App',
         year: '2017 - Present',
         company: 'B507: A Creative Media Mob',
@@ -24,15 +25,18 @@ export const Safehr: safehr[] = [
         images: [
             {
                 url: 'safehr/safehr-app-home.png',
-                size: 'full'
+                size: 'full',
+                backgroundSize: 'contain'
             },
             {
                 url: 'safehr/safehr-app-ehr.png',
-                size: 'full'
+                size: 'full',
+                backgroundSize: 'contain'
             },
             {
                 url: 'safehr/safehr-portal-scenarios.png',
-                size: 'full'
+                size: 'full',
+                backgroundSize: 'contain'
             }
         ],
         tools: [
@@ -71,7 +75,8 @@ export const Safehr: safehr[] = [
 
 interface safehr {
     category: string;
-    mainImage: string;
+    mainImageUrl: string;
+    mainImageSize: string;
     title: string;
     year: string;
     company: string;
@@ -90,6 +95,7 @@ interface eachContent {
 interface eachImage {
     url: string;
     size: string;
+    backgroundSize: string;
 }
 
 interface eachTool {

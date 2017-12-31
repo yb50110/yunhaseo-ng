@@ -5,7 +5,7 @@
 <div class="project" *ngFor="let project of projectData">
 
     <div class="image-main"
-         [ngStyle]="{'background-image': 'url(./assets/img/' + project.mainImage + ')', 'background-position': 'bottom'}"></div>
+         [ngStyle]="{'background-image': 'url(./assets/img/' + project.mainImageUrl + ')', 'background-size': project.mainImageSize}"></div>
     <h1 class="title">{{ project.title }}</h1>
     <p class="subtitle">{{ project.year }}; {{ project.company }}</p>
 
@@ -15,7 +15,7 @@
 
     <div *ngFor="let image of project.images"
          [ngClass]="{ 'image-half': image.size == 'half', 'image-full': image.size == 'full'} "
-         [ngStyle]="{'background-image': 'url(./assets/img/' + image.url + ')'}"></div>
+         [ngStyle]="{'background-image': 'url(./assets/img/' + image.url + ')', 'background-size': image.backgroundSize}"></div>
 
     <p class="body">
         <span class="body-label one-item">Time</span>

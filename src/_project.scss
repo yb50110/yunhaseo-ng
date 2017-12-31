@@ -52,13 +52,17 @@
   }
 
   .image-main {
+    background-position: center bottom;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     background-color: $gray;
     height: 225px;
     width: 100%;
     left: 0;
+
+    @media screen and (min-width: 1200px) {
+      background-position: center;
+      height: 300px;
+    }
   }
 
   .title {
@@ -83,7 +87,7 @@
       float: left;
 
       &.one-item { margin-bottom: 20px; }
-      &.two-item { margin-bottom: 20px; }
+      &.two-item { margin-bottom: 50px; }
       &.three-item { margin-bottom: 70px; }
       &.four-item { margin-bottom: 90px; }
       &.five-item { margin-bottom: 110px; }
@@ -91,24 +95,18 @@
     a { color: $text-black }
   }
 
-  .image-half-container {
-    justify-content: space-between;
-    display: flex;
-  }
   .image-half {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
     margin-bottom: 30px;
     height: 330px;
     float: left;
     width: 50%;
   }
-
   .image-full {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    margin-bottom: 20px;
     height: 250px;
   }
 }
