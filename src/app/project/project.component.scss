@@ -1,0 +1,9 @@
+.nav {
+  @media screen and (min-width: 1200px) {
+    float: left;
+  }
+}
+
+// The rest of the styling is located in app/_project.scss as .project-group needed to be used in other
+// parts of this app as well. In order to have all project-related styling in one place, the styling
+// has been left there.

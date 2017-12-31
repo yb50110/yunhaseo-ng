@@ -20,10 +20,12 @@ export const Pepoints: pepoints[] = [
         ],
         images: [
             {
-                url: 'pepoints/Frontal.png'
+                url: 'pepoints/Frontal.png',
+                size: 'half'
             },
             {
-                url: 'pepoints/Frontal2.png'
+                url: 'pepoints/Frontal2.png',
+                size: 'half'
             }
         ],
         tools: [
@@ -74,6 +76,7 @@ interface eachContent {
 
 interface eachImage {
     url: string;
+    size: string;
 }
 
 interface eachTool {

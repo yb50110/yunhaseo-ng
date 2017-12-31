@@ -1,0 +1,46 @@
+<ul class="nav">
+    <li class="nav-link"><a [routerLink]="['/', 'home']"><h3>Home</h3></a></li>
+</ul>
+
+<div class="project" *ngFor="let project of projectData">
+
+    <div class="image-main"
+         [ngStyle]="{'background-image': 'url(./assets/img/' + project.mainImage + ')', 'background-position': 'bottom'}"></div>
+    <h1 class="title">{{ project.title }}</h1>
+    <p class="subtitle">{{ project.year }}; {{ project.company }}</p>
+
+    <p class="body" *ngFor="let content of project.content">
+        {{ content.text }}
+    </p>
+
+    <div *ngFor="let image of project.images"
+         [ngClass]="{ 'image-half': image.size == 'half', 'image-full': image.size == 'full'} "
+         [ngStyle]="{'background-image': 'url(./assets/img/' + image.url + ')'}"></div>
+
+    <p class="body">
+        <span class="body-label one-item">Time</span>
+        <span>{{ project.year }}</span>
+        <span class="clearfix"></span>
+
+        <span class="body-label one-item">Role</span>
+        <span>{{ project.role }}</span>
+        <span class="clearfix"></span>
+
+        <span class="body-label" [ngClass]="{ 'two-item' : project.tools.length == 2,
+            'three-item' : project.tools.length == 3,
+            'four-item' : project.tools.length == 4,
+            'five-item' : project.tools.length == 5}">Tools</span>
+        <span *ngFor="let tool of project.tools">{{ tool.name }}<br></span>
+        <span class="clearfix"></span>
+
+        <span class="body-label" [ngClass]="{ 'two-item' : project.skills.length == 2,
+            'three-item' : project.skills.length == 3,
+            'four-item' : project.skills.length == 4,
+            'five-item' : project.skills.length == 5}">Skills</span>
+        <span *ngFor="let skill of project.skills">{{ skill.description }}<br></span>
+        <span class="clearfix"></span>
+
+        <span class="body-label one-item" *ngIf="project.url !== ''">Skills</span>
+        <span *ngIf="project.url !== ''"><a href="{{ project.url }}">(click me!)</a></span>
+    </p>
+</div>

@@ -42,6 +42,11 @@
 
 .project {
 
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+    float: right;
+  }
+
   .image-main {
     background-repeat: no-repeat;
     background-position: center;
@@ -77,6 +82,7 @@
       &.two-item { margin-bottom: 20px; }
       &.three-item { margin-bottom: 70px; }
       &.four-item { margin-bottom: 90px; }
+      &.five-item { margin-bottom: 110px; }
     }
     a { color: $text-black }
   }
@@ -89,25 +95,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: calc(50% - 5px);
-    margin: 20px 0;
+    margin-bottom: 30px;
     height: 330px;
+    float: left;
+    width: 50%;
   }
+
   .image-full {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     height: 250px;
-
-    &.ipad {
-      height: 250px;
-    }
-    &.cover-entire-width {
-      width: calc(100% + 40px);
-      background-size: cover;
-      margin-left: -20px;
-      height: 350px;
-    }
   }
-
 }
