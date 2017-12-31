@@ -1,0 +1,21 @@
+header {
+  animation-name: onLoadEffect-fadein;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  opacity: 0;
+
+  .logo {
+    max-height: 40px;
+    max-width: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    padding-left: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 50px;
+    padding-left: 0;
+  }
+}

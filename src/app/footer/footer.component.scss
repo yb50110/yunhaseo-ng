@@ -1,0 +1,20 @@
+footer {
+  animation-name: onLoadEffect-fadein;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  opacity: 0;
+
+  transform: rotate(-90deg);
+  position: absolute;
+  font-size: 0.6em;
+  color: #adadad;
+  bottom: 75px;
+  left: -40px;
+
+  @media screen and (min-width: 1200px) {
+    transform: none;
+    bottom: 40px;
+    left: 40px;
+  }
+}
