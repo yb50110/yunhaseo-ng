@@ -41,5 +41,4 @@ export class LandingComponent implements OnInit {
                 break;
         }
     }
-
 }

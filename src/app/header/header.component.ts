@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-header',
   template: `
       <header>
-          <a routerLink="">
+          <a routerLink="home">
             <img class="logo" src="../../assets/img/yunha-logo.svg" alt="Yunha's logo">
           </a>
       </header>
