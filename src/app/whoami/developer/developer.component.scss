@@ -1,0 +1,119 @@
+.nav {
+  float: left;
+}
+
+.whoami-developer-container {
+  font-family: "Menlo", "Inconsolata", monospace;
+  padding: 50px 15px 20px 15px;
+  background-color: #263238;
+  font-size: 0.8em;
+  position: absolute;
+  line-height: 175%;
+  color: #89ddff;
+  right: 0;
+  left: 0;
+  top: 0;
+
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    float: right;
+    width: 50%;
+  }
+
+  .nav {
+    padding: 10px 15px 3px 15px;
+    background-color: #e2e2e2;
+    position: fixed;
+    z-index: 2;
+    margin: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    li {
+      height: 15px;
+      width: 15px;
+      background-color: #ff5f58;
+      border-radius: 50%;
+      position: relative;
+
+      &:before {
+        content: "";
+        height: 15px;
+        width: 15px;
+        background-color: #ffbd2e;
+        border-radius: 50%;
+        position: absolute;
+        right: -25px;
+      }
+      &:after {
+        content: "";
+        height: 15px;
+        width: 15px;
+        background-color: #28c941;
+        border-radius: 50%;
+        position: absolute;
+        right: -50px;
+      }
+
+      a {
+        color: transparent;
+        float: left;
+        width: 65px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+    }
+  }
+
+  .code {
+    padding-top: 25px;
+
+    .highlight {
+      background: #1b252a;
+      position: absolute;
+      height: 1.5em;
+      z-index: 0;
+      top: 50px;
+      right: 0;
+      left: 0;
+    }
+    .first-line {
+      position: absolute;
+      z-index: 1;
+      top: 50px;
+    }
+
+    .indent {
+      padding-left: 10px;
+      border-left: 1px solid #34454d;
+      &:nth-of-type(1) {
+        padding-top: 20px;
+      }
+    }
+
+    .purple {
+      color: #c792ea;
+    }
+    .yellow {
+      color: #ffcb6b;
+    }
+    .green {
+      color: #c3e88d;
+    }
+    .red {
+      color: #ff5370;
+    }
+    .blue {
+      color: #82aaff;
+    }
+    .white {
+      color: #d2dbf1;
+    }
+    .orange {
+      color: #f78c6c;
+    }
+  }
+}

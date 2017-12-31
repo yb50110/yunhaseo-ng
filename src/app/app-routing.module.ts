@@ -1,11 +1,33 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { LandingComponent } from './landing/landing.component';
+import { HomeComponent } from './home/home.component';
+import { WhoamiComponent } from './whoami/whoami.component';
+import { DeveloperComponent } from './whoami/developer/developer.component';
+import { DesignerComponent } from './whoami/designer/designer.component';
+
 const routes: Routes = [
   {
     path: '',
-    children: []
-  }
+    component: LandingComponent,
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'whoami',
+    component: WhoamiComponent,
+  },
+  {
+    path: 'whoami/developer',
+    component: DeveloperComponent,
+  },
+  {
+    path: 'whoami/designer',
+    component: DesignerComponent,
+  },
 ];
 
 @NgModule({

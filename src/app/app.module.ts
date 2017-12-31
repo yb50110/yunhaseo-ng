@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingComponent } from './landing/landing.component';
 import { WhoamiComponent } from './whoami/whoami.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { DeveloperComponent } from './whoami/developer/developer.component';
+import { DesignerComponent } from './whoami/designer/designer.component';
+import { HomeComponent } from './home/home.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent,
-    WhoamiComponent
+    WhoamiComponent,
+    HeaderComponent,
+    FooterComponent,
+    DeveloperComponent,
+    DesignerComponent,
+    HomeComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

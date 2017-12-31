@@ -1,1 +1,235 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+@font-face {
+  font-family: 'Menlo';
+  src: url('assets/fonts/Menlo-Regular.woff');
+  src: url('assets/fonts/Menlo-Regular.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata'); // backup if menlo doesn't work
+
+$text-black: #000000;
+$text-gray: #adadad;
+
+$red: #d51c29;
+$red-dark: #bb1621;
+$gray: #eeeeee;
+
+$text-large: 1.75em;
+$text-medium: 1.25em;
+$text-small: 0.8em;
+
+$desktop: 1200px;
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+// HTML general styling
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $text-black;
+  font-weight: 400;
+
+  background: #ffffff;
+  padding: 20px;
+  height: 100vh;
+  margin: 0;
+
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    width: 1000px;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-size: $text-large;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: $text-medium;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Lora', serif;
+  font-size: $text-small;
+  font-weight: 700;
+}
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+// Custom single-change styling
+
+.bold {
+  font-weight: 700;
+}
+
+.red {
+  color: $red;
+}
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+// Nav styling
+
+.nav-wrapper {
+
+  &.with-animation {
+    animation-name: onLoadEffect-fadein;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+}
+
+.nav {
+  padding-left: 60px;
+  list-style: none;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 50px;
+  }
+
+  &.with-animation {
+    animation-name: onLoadEffect-slideFromBottom;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 2.25s;
+    margin-top: 50px;
+
+    .nav-link {
+      animation-fill-mode: forwards;
+      animation-duration: 3s;
+      cursor: pointer;
+
+      &:nth-of-type(1) {
+        animation-name: onLoadEffect-slideFromLeft;
+      }
+      &:nth-of-type(2) {
+        animation-name: onLoadEffect-slideFromRight;
+      }
+      &:nth-of-type(3) {
+        animation-name: onLoadEffect-slideFromLeft;
+      }
+    }
+  }
+}
+
+.nav-bottom {
+  padding-left: 60px;
+  list-style: none;
+
+  &.with-animation {
+    animation-name: onLoadEffect-fadein;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+}
+
+.nav-link {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+
+  h1, h2, h3 {
+    display: inline-block;
+    margin: 15px 0 0 0;
+    color: $text-black;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  // on desktop, have hovering to link create a strike-through
+  .nav-link h1, .nav-link h2 {
+    position: relative;
+    transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+
+    &:after {
+      transform: scaleX(0);
+      transform-origin: center right;
+    }
+
+    &:hover {
+      transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+    }
+
+    &:hover:after {
+      content: '';
+      top: 0.7em;
+      left: -10px;
+      position: absolute;
+      display: block;
+      width: calc(100% + 20px);
+      height: 2px;
+      background: black;
+      transform-origin: center left;
+      animation: strikethrough 0.5s 0s cubic-bezier(.55, 0, .1, 1) 1;
+      transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes strikethrough {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+}
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+// Repeatedly used animation effects
+
+@keyframes onLoadEffect-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes onLoadEffect-slideFromLeft {
+  0% {
+    margin-left: -30px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes onLoadEffect-slideFromRight {
+  0% {
+    margin-left: 30px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes onLoadEffect-slideFromBottom {
+  0% {
+    margin-top: 50px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
