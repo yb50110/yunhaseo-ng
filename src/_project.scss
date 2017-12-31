@@ -1,0 +1,113 @@
+// ----------------------------------------------------------
+// project as shown on the home and the landing pages
+
+.project-group {
+  white-space: nowrap;
+  overflow-x: scroll;
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 0;
+
+  @media screen and (min-width: 1200px) {
+    white-space: normal;
+    overflow-x: initial;
+  }
+
+  .project-group-list {
+    margin: 10px 15px 10px 0;
+    display: inline-block;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% / 3) - 30px);
+    }
+
+    .project-group-image {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-color: $gray;
+      height: 225px;
+      width: 100%;
+    }
+    .project-group-title {
+      color: $red;
+    }
+  }
+}
+
+
+// ----------------------------------------------------------
+// ----------------------------------------------------------
+
+.project {
+
+  .image-main {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: $gray;
+    height: 225px;
+    width: 100%;
+    left: 0;
+  }
+
+  .title {
+    font-size: $text-medium;
+    margin-bottom: 5px;
+  }
+
+  .subtitle {
+    font-size: $text-small;
+    color: $text-gray;
+  }
+
+  .body {
+    line-height: 150%;
+    margin: 40px 0;
+
+    .body-label {
+      margin-right: 15px;
+      font-weight: 700;
+      display: block;
+      width: 60px;
+      float: left;
+
+      &.one-item { margin-bottom: 20px; }
+      &.two-item { margin-bottom: 20px; }
+      &.three-item { margin-bottom: 70px; }
+      &.four-item { margin-bottom: 90px; }
+    }
+    a { color: $text-black }
+  }
+
+  .image-half-container {
+    justify-content: space-between;
+    display: flex;
+  }
+  .image-half {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: calc(50% - 5px);
+    margin: 20px 0;
+    height: 330px;
+  }
+  .image-full {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 250px;
+
+    &.ipad {
+      height: 250px;
+    }
+    &.cover-entire-width {
+      width: calc(100% + 40px);
+      background-size: cover;
+      margin-left: -20px;
+      height: 350px;
+    }
+  }
+
+}

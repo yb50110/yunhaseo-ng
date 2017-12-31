@@ -10,6 +10,7 @@ import { DeveloperComponent } from './whoami/developer/developer.component';
 import { DesignerComponent } from './whoami/designer/designer.component';
 import { HomeComponent } from './home/home.component';
 import { LandingComponent } from './landing/landing.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LandingComponent } from './landing/landing.component';
     DeveloperComponent,
     DesignerComponent,
     HomeComponent,
-    LandingComponent
+    LandingComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

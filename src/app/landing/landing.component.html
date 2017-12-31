@@ -1,9 +1,62 @@
 <!-- identical to HomeComponent but contains landing animations -->
 <div class="nav-wrapper with-animation">
   <ul class="nav with-animation">
-    <li class="nav-link"><a routerLink="development"><h1>development</h1></a></li>
-    <li class="nav-link"><a routerLink="design"><h1>design</h1></a></li>
-    <li class="nav-link"><a routerLink="illustration"><h1>illustration</h1></a></li>
+
+    <!----------------------------------------------------------->
+    <!---------------- development projects --------------------->
+    <li class="nav-link">
+      <a (click)="toggleShow('development')" [ngClass]="{ 'open' : show_development }"><h1>development</h1></a>
+      <ul class="project-group" *ngIf="show_development">
+
+        <li class="project-group-list" [routerLink]="['/', 'projects', 'pepoints']">
+          <div class="project-group-image"
+               style="background-image: url('./assets/img/pepoints/main.png'); background-position: bottom;"></div>
+          <h2 class="project-group-title">PE Points Web Application</h2>
+        </li>
+        <li class="project-group-list" [routerLink]="['/', 'projects', 'safehr']">
+          <div class="project-group-image"
+               style="background-image: url('./assets/img/safehr/main.png');"></div>
+          <h2 class="project-group-title"> SAFEHR Portal and App </h2>
+        </li>
+
+      </ul>
+    </li>
+
+    <!----------------------------------------------------------->
+    <!---------------- design projects -------------------------->
+    <li class="nav-link">
+      <a (click)="toggleShow('design')" [ngClass]="{ 'open' : show_design }"><h1>design</h1></a>
+      <ul class="project-group" *ngIf="show_design">
+
+        <li class="project-group-list" [routerLink]="['/', 'projects', 'spijkergoed']">
+          <div class="project-group-image"
+               style="background-image: url('./assets/img/spijkergoed/main.jpg');background-position: -60px -45px;background-size: 170% 170%;"></div>
+          <h2 class="project-group-title">Spijkergoed</h2>
+        </li>
+        <li class="project-group-list" [routerLink]="['/', 'projects', 'swan']">
+          <div class="project-group-image"
+               style="background-image: url('./assets/img/swan/main.png');background-size: cover;"></div>
+          <h2 class="project-group-title">Swan</h2>
+        </li>
+
+      </ul>
+    </li>
+
+    <!----------------------------------------------------------->
+    <!----------------- illustration projects ------------------->
+    <li class="nav-link">
+      <a (click)="toggleShow('illustration')" [ngClass]="{ 'open' : show_illustration }"><h1>illustration</h1></a>
+      <ul class="project-group" *ngIf="show_illustration">
+
+        <li class="project-group-list" [routerLink]="['/', 'projects', 'petiteaparis']">
+          <div class="project-group-image"
+               style="background-image: url('./assets/img/petiteaparis/main.jpg');background-position: -145px -30px;background-size: 200%;"></div>
+          <h2 class="project-group-title">Petite a Paris Illustration</h2>
+        </li>
+
+      </ul>
+    </li>
+
   </ul>
 </div>
 

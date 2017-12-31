@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { WhoamiComponent } from './whoami/whoami.component';
 import { DeveloperComponent } from './whoami/developer/developer.component';
 import { DesignerComponent } from './whoami/designer/designer.component';
+import { ProjectComponent } from './project/project.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'whoami/designer',
     component: DesignerComponent,
+  },
+  {
+    path: 'projects/:name',
+    component: ProjectComponent,
   },
 ];
 
