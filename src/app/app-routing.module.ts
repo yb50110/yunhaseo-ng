@@ -33,6 +33,10 @@ const routes: Routes = [
     path: 'projects/:name',
     component: ProjectComponent,
   },
+  // {
+  //   path: '**',
+  //   component: NotFound404Component
+  // }
 ];
 
 @NgModule({

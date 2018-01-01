@@ -1,43 +1,59 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {trigger, style, transition, animate, state} from '@angular/animations';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss'],
+    animations: [
+        trigger('routerTransition', [
+            // state('void', style({position: 'fixed', width: '100%'})),
+            // state('*', style({position: 'fixed', width: '100%'})),
+            transition(':enter', [  // before 2.1: transition('void => *', [
+                style({transform: 'scale(0.9)', opacity: 0}),
+                animate('0.6s ease-in-out', style({transform: 'scale(1)', opacity: 1}))
+            ]),
+            transition(':leave', [  // before 2.1: transition('* => void', [
+                style({transform: 'scale(1)', opacity: 1}),
+                animate('0.6s ease-in-out', style({transform: 'scale(0.9)', opacity: 0}))
+            ])
+        ])
+    ]
 })
 export class HomeComponent implements OnInit {
 
-  show_development: boolean;
-  show_design: boolean;
-  show_illustration: boolean;
+    show_development: boolean;
+    show_design: boolean;
+    show_illustration: boolean;
 
-  constructor() { }
-
-  ngOnInit() {
-    this.show_development = false;
-    this.show_design = false;
-    this.show_illustration = false;
-  }
-
-  toggleShow(type) {
-    switch (type) {
-        // ternary: if _____ is false, set to true. if true, set to false
-        // also set other groups to false so that they are not being shown
-      case 'development':
-        this.show_design = false;
-        this.show_illustration = false;
-        this.show_development = this.show_development === false ? true : false;
-        break;
-      case 'design':
-        this.show_development = false;
-        this.show_illustration = false;
-        this.show_design = this.show_design === false ? true : false;
-        break;
-      case 'illustration':
-        this.show_development = false;
-        this.show_design = false;
-        this.show_illustration = this.show_illustration === false ? true : false;
-        break;
+    constructor() {
     }
-  }
+
+    ngOnInit() {
+        this.show_development = false;
+        this.show_design = false;
+        this.show_illustration = false;
+    }
+
+    toggleShow(type) {
+        switch (type) {
+            // ternary: if _____ is false, set to true. if true, set to false
+            // also set other groups to false so that they are not being shown
+            case 'development':
+                this.show_design = false;
+                this.show_illustration = false;
+                this.show_development = this.show_development === false ? true : false;
+                break;
+            case 'design':
+                this.show_development = false;
+                this.show_illustration = false;
+                this.show_design = this.show_design === false ? true : false;
+                break;
+            case 'illustration':
+                this.show_development = false;
+                this.show_design = false;
+                this.show_illustration = this.show_illustration === false ? true : false;
+                break;
+        }
+    }
 }
