@@ -7,14 +7,14 @@ import {trigger, style, transition, animate, state} from '@angular/animations';
     styleUrls: ['./landing.component.scss'],
     animations: [
         trigger('fadeAnimation', [
-            transition(':enter', [
-                style({opacity: 0, transform: 'translateY(-10%)'}),
-                animate('0.3s ease-in-out', style({opacity: 1, transform: 'translateY(0%)'}))
-            ]),
-            transition(':leave', [
-                style({opacity: 1, transform: 'translateY(0%)'}),
-                animate('0.3s ease-out', style({opacity: 0, transform: 'translateY(-10%)'}))
-            ])
+            // transition(':enter', [
+            //     style({opacity: 0, transform: 'translateY(-10%)'}),
+            //     animate('0.3s ease-in-out', style({opacity: 1, transform: 'translateY(0%)'}))
+            // ]),
+            // transition(':leave', [
+            //     style({opacity: 1, transform: 'translateY(0%)'}),
+            //     animate('0.3s ease-out', style({opacity: 0, transform: 'translateY(-10%)'}))
+            // ])
         ])
     ]
 })
