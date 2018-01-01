@@ -53,7 +53,6 @@ body {
 
   padding: 20px 15px 20px 20px;
   background: #ffffff;
-  min-height: 100vh;
   margin: 0;
 
   @media screen and (min-width: 1200px) {
@@ -117,6 +116,7 @@ h3 {
   list-style: none;
 
   @media screen and (min-width: 768px) {
+    padding-left: 100px;
     padding-top: 50px;
   }
 
@@ -148,6 +148,10 @@ h3 {
 .nav-bottom {
   padding-left: 60px;
   list-style: none;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 100px;
+  }
 
   &.with-animation {
     animation-name: onLoadEffect-fadein;

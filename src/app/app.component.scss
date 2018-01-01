@@ -1,0 +1,14 @@
+.background-image {
+  background-image: url('../assets/img/yunha-fullbody.png');
+  background-repeat: no-repeat;
+  background-position-y: 135%;
+  background-position-x: 80%;
+  background-size: 300px;
+  position: fixed;
+  opacity: 0.075;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
