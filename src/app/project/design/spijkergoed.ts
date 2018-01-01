@@ -1,6 +1,6 @@
 export const Spjikergoed: spijkergoed[] = [
     {
-        category: 'development',
+        category: 'design',
         mainImageUrl: 'spijkergoed/main.jpg',
         mainImageSize: 'cover',
         title: 'Spijkergoed Branding',

@@ -26,14 +26,18 @@
         <span>{{ project.role }}</span>
         <span class="clearfix"></span>
 
-        <span class="body-label" [ngClass]="{ 'two-item' : project.tools.length == 2,
+        <span class="body-label" [ngClass]="{
+            'one-item' : project.tools.length == 1,
+            'two-item' : project.tools.length == 2,
             'three-item' : project.tools.length == 3,
             'four-item' : project.tools.length == 4,
             'five-item' : project.tools.length == 5}">Tools</span>
         <span *ngFor="let tool of project.tools">{{ tool.name }}<br></span>
         <span class="clearfix"></span>
 
-        <span class="body-label" [ngClass]="{ 'two-item' : project.skills.length == 2,
+        <span class="body-label" [ngClass]="{
+            'one-item' : project.skills.length == 1,
+            'two-item' : project.skills.length == 2,
             'three-item' : project.skills.length == 3,
             'four-item' : project.skills.length == 4,
             'five-item' : project.skills.length == 5}">Skills</span>

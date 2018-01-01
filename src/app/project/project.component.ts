@@ -5,9 +5,9 @@ import { Pepoints } from './development/pepoints';
 import { Safehr } from './development/safehr';
 
 import { Spjikergoed } from './design/spijkergoed';
-// import { Swan } from './design/swan';
+import { Swan } from './design/swan';
 
-// import { Petiteaparis } from './illustration/petiteaparis';
+import { Petiteaparis } from './illustration/petiteaparis';
 
 @Component({
   selector: 'app-project',
@@ -35,13 +35,13 @@ export class ProjectComponent implements OnInit {
       case 'spijkergoed':
         this.projectData = Spjikergoed;
         break;
-      // case 'swam':
-      //   this.projectData = Swan;
-      //   break;
-      //
-      // case 'petiteaparis':
-      //   this.projectData = Petiteaparis;
-      //   break;
+      case 'swan':
+        this.projectData = Swan;
+        break;
+
+      case 'petiteaparis':
+        this.projectData = Petiteaparis;
+        break;
     }
   }
 
