@@ -1,4 +1,7 @@
 <div class="whoami-component-wrapper" [@routerTransition]="">
+
+  <div class="email-background" *ngIf="showEmailOptions" (click)="toggleEmailOptions()"></div>
+
   <div class="nav-wrapper">
     <ul class="nav">
       <li class="nav-link"><a [routerLink]="['/', 'home']"><h2>works</h2></a></li>
@@ -8,6 +11,12 @@
   </div>
 
   <ul class="nav-bottom">
-    <li class="nav-link"><h2>email</h2></li>
+    <li class="nav-link" (click)="toggleEmailOptions()"><h2>email</h2></li>
   </ul>
+
+  <div class="email-options" *ngIf="showEmailOptions" [@fadeAnimation]="">
+    <a href="mailto:yunha.tonik.seo@gmail.com">open mail app</a>
+    <a ngxClipboard [cbContent]="'yunha.tonik.seo@gmail.com'" (click)="copiedEmail = true;">copy email</a>
+    <p class="email-copy-success" *ngIf="copiedEmail">email copied</p>
+  </div>
 </div>

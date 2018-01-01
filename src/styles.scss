@@ -33,6 +33,11 @@ $desktop: 1200px;
 
 a {
   text-decoration: none;
+  color: $text-black;
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
 // -------------------------------------------------------------------------------------------------------
@@ -109,7 +114,7 @@ h3 {
   padding-left: 60px;
   list-style: none;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 768px) {
     padding-top: 50px;
   }
 
@@ -153,6 +158,7 @@ h3 {
 
 .nav-link {
   display: inline-block;
+  transition: 0.5s;
   cursor: pointer;
   width: 100%;
 
@@ -170,7 +176,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: $desktop) {
+@media screen and (min-width: 768px) {
   // on desktop, have hovering to link create a strike-through
   .nav-link > a > h1, .nav-link > a > h2 {
     position: relative;

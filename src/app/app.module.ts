@@ -13,6 +13,9 @@ import { HomeComponent } from './home/home.component';
 import { LandingComponent } from './landing/landing.component';
 import { ProjectComponent } from './project/project.component';
 
+/* Feature Modules */
+import { ClipboardModule } from 'ngx-clipboard';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,8 @@ import { ProjectComponent } from './project/project.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

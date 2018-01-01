@@ -8,7 +8,7 @@
             <li class="nav-link">
                 <a (click)="toggleShow('development')" [ngClass]="{ 'open' : show_development }"><h1>development</h1>
                 </a>
-                <ul class="project-group" *ngIf="show_development">
+                <ul class="project-group" *ngIf="show_development" [@fadeAnimation]="">
 
                     <li class="project-group-list" [routerLink]="['/', 'projects', 'pepoints']">
                         <div class="project-group-image"
@@ -28,7 +28,7 @@
             <!---------------- design projects -------------------------->
             <li class="nav-link">
                 <a (click)="toggleShow('design')" [ngClass]="{ 'open' : show_design }"><h1>design</h1></a>
-                <ul class="project-group" *ngIf="show_design">
+                <ul class="project-group" *ngIf="show_design" [@fadeAnimation]="">
 
                     <li class="project-group-list" [routerLink]="['/', 'projects', 'spijkergoed']">
                         <div class="project-group-image"
@@ -49,7 +49,7 @@
             <li class="nav-link">
                 <a (click)="toggleShow('illustration')" [ngClass]="{ 'open' : show_illustration }"><h1>illustration</h1>
                 </a>
-                <ul class="project-group" *ngIf="show_illustration">
+                <ul class="project-group" *ngIf="show_illustration" [@fadeAnimation]="">
 
                     <li class="project-group-list" [routerLink]="['/', 'projects', 'petiteaparis']">
                         <div class="project-group-image"
