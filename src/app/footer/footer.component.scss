@@ -6,11 +6,11 @@ footer {
   opacity: 0;
 
   transform: rotate(-90deg);
-  position: absolute;
+  position: fixed;
   font-size: 0.6em;
   color: #adadad;
-  bottom: 75px;
-  left: -40px;
+  bottom: 65px;
+  left: -55px;
 
   @media screen and (min-width: 1200px) {
     transform: none;

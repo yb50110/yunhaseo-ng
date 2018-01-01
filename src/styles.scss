@@ -19,6 +19,7 @@ $gray: #eeeeee;
 
 $text-large: 1.75em;
 $text-medium: 1.25em;
+$text-body: 0.9em;
 $text-small: 0.8em;
 
 $desktop: 1200px;
@@ -46,12 +47,13 @@ a {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: $text-body;
   color: $text-black;
   font-weight: 400;
 
+  padding: 20px 15px 20px 20px;
   background: #ffffff;
-  padding: 20px;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 
   @media screen and (min-width: 1200px) {
