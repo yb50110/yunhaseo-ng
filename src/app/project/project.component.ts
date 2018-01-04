@@ -5,6 +5,7 @@ import {trigger, style, transition, animate, state} from '@angular/animations';
 // development projects
 import {Pepoints} from './development/pepoints';
 import {Safehr} from './development/safehr';
+import {Krake} from './development/krake';
 
 // design projects
 import {Spjikergoed} from './design/spijkergoed';
@@ -48,6 +49,9 @@ export class ProjectComponent implements OnInit {
                 break;
             case 'safehr':
                 this.projectData = Safehr;
+                break;
+            case 'krake':
+                this.projectData = Krake;
                 break;
 
             // design projects
