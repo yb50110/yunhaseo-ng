@@ -26,7 +26,7 @@ export const Petiteaparis: petiteaparis[] = [
                 backgroundSize: 'cover'
             },
             {
-                url: 'petiteaparis/proof.jpg',
+                url: 'petiteaparis/proof.png',
                 size: 'full',
                 backgroundSize: 'cover'
             }
