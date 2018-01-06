@@ -15,19 +15,25 @@ export const Petiteaparis: petiteaparis[] = [
             {
                 text: 'Through carefully observing her clothing, and after a few iterations of feedback, this illustration was selected as the final piece.',
             },
-            {
-                text: 'I visited her shop while at the Netherlands and was happy to see the illustration being used within her business cards and various goods around her shop.'
-            }
         ],
         images: [
             {
                 url: 'petiteaparis/sketch.jpg',
                 size: 'full',
+                imageHeight: '',
                 backgroundSize: 'cover'
             },
+        ],
+        content2: [
+            {
+                text: 'I visited her shop while at the Netherlands and was happy to see the illustration being used within her business cards and various goods around her shop.'
+            }
+        ],
+        images2: [
             {
                 url: 'petiteaparis/proof.png',
                 size: 'full',
+                imageHeight: '',
                 backgroundSize: 'cover'
             }
         ],
@@ -58,6 +64,8 @@ interface petiteaparis {
     url: string;
     content: eachContent[];
     images: eachImage[];
+    content2: eachContent[];
+    images2: eachImage[];
     tools: eachTool[];
     skills: eachSkill[];
 }
@@ -69,6 +77,7 @@ interface eachContent {
 interface eachImage {
     url: string;
     size: string;
+    imageHeight: string;
     backgroundSize: string;
 }
 

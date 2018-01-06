@@ -12,19 +12,25 @@ export const Spjikergoed: spijkergoed[] = [
             {
                 text: 'Our client was creating a clothing company aimed towards modern and minimalistic men fashion. The name Spijkergoed references the studs and buttons on the jeans, but “spijker” also means “nail”.',
             },
-            {
-                text: 'Thus, the creative solution for their branding needs was to directly show the hape of a nail but allude to clothing through the sewn marks. Various marks and gaphical elements were created.',
-            }
         ],
         images: [
             {
                 url: 'spijkergoed/businesscards.jpg',
                 size: 'full',
+                imageHeight: '235px',
                 backgroundSize: 'cover'
             },
+        ],
+        content2: [
+            {
+                text: 'Thus, the creative solution for their branding needs was to directly show the hape of a nail but allude to clothing through the sewn marks. Various marks and gaphical elements were created.',
+            }
+        ],
+        images2: [
             {
                 url: 'spijkergoed/shirt.jpg',
                 size: 'full',
+                imageHeight: '420px',
                 backgroundSize: 'cover'
             }
         ],
@@ -61,6 +67,8 @@ interface spijkergoed {
     url: string;
     content: eachContent[];
     images: eachImage[];
+    content2: eachContent[];
+    images2: eachImage[];
     tools: eachTool[];
     skills: eachSkill[];
 }
@@ -72,6 +80,7 @@ interface eachContent {
 interface eachImage {
     url: string;
     size: string;
+    imageHeight: string;
     backgroundSize: string;
 }
 

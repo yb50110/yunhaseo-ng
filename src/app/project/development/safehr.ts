@@ -15,6 +15,22 @@ export const Safehr: safehr[] = [
             {
                 text: 'The SAFEHR App is meant for classroom assignment and simulation use. It includes an Electronic Health Record (EHR) system with a focus on the family aspect of the patient, including the Family Constructs, Genogram and Ecomap systems that tracks the families and emotional connections of the patient.',
             },
+        ],
+        images: [
+            {
+                url: 'safehr/safehr-app-home.png',
+                size: 'full',
+                imageHeight: '230px',
+                backgroundSize: 'contain'
+            },
+            {
+                url: 'safehr/safehr-app-ehr.png',
+                size: 'full',
+                imageHeight: '230p',
+                backgroundSize: 'contain'
+            },
+        ],
+        content2: [
             {
                 text: 'The SAFEHR Portal is for the Nursing Faculty to easily enter information of the scenarios for the simulations. They can also view more information relating to their courses and students, and assign specific patients to students to use in the classroom as an assignment.',
             },
@@ -22,22 +38,13 @@ export const Safehr: safehr[] = [
                 text: 'The project currently has 6 developers and 1 project manager, where none of members have been around since the dawn of the project. Thus, we have had some hiccups relating to communication, coding, and scope creeps. Nevertheless, we were able to trek through all these issues and create a functioning and usable product.',
             },
         ],
-        images: [
-            {
-                url: 'safehr/safehr-app-home.png',
-                size: 'full',
-                backgroundSize: 'contain'
-            },
-            {
-                url: 'safehr/safehr-app-ehr.png',
-                size: 'full',
-                backgroundSize: 'contain'
-            },
+        images2: [
             {
                 url: 'safehr/safehr-portal-scenarios.png',
                 size: 'full',
+                imageHeight: '190px',
                 backgroundSize: 'contain'
-            }
+            },
         ],
         tools: [
             {
@@ -84,6 +91,8 @@ interface safehr {
     url: string;
     content: eachContent[];
     images: eachImage[];
+    content2: eachContent[];
+    images2: eachImage[];
     tools: eachTool[];
     skills: eachSkill[];
 }
@@ -95,6 +104,7 @@ interface eachContent {
 interface eachImage {
     url: string;
     size: string;
+    imageHeight: string;
     backgroundSize: string;
 }
 

@@ -15,20 +15,32 @@ export const Pepoints: pepoints[] = [
             {
                 text: 'Our team, which consisted of a Graphic Designer, Front-end Developer, Back-end Developer, and a Project Manager, proposed a new design and built the application. There were numerous feedback sessions with the clients where we showcased our progress, reviewed new functions and features, and clarified assumptions and project goals.',
             },
-            {
-                text: 'As being one of the developers\' and designer\'s last major projects at B302, it went extremely smoothly - even with the initial hiccup of the project that occurred with the transition of a new Project Manager. Active communication took place between the designer and myself, as the Front-end Developer, to discuss what design choices were feasible with the schedule.',
-            },
         ],
         images: [
             {
                 url: 'pepoints/Frontal.png',
                 size: 'half',
+                imageHeight: '',
                 backgroundSize: 'contain'
             },
             {
                 url: 'pepoints/Frontal2.png',
                 size: 'half',
+                imageHeight: '',
                 backgroundSize: 'contain'
+            }
+        ],
+        content2: [
+            {
+                text: 'As being one of the developers\' and designer\'s last major projects at B302, it went extremely smoothly - even with the initial hiccup of the project that occurred with the transition of a new Project Manager. Active communication took place between the designer and myself, as the Front-end Developer, to discuss what design choices were feasible with the schedule.',
+            },
+        ],
+        images2: [
+            {
+                url: '',
+                size: '',
+                imageHeight: '',
+                backgroundSize: ''
             }
         ],
         tools: [
@@ -70,6 +82,8 @@ interface pepoints {
     url: string;
     content: eachContent[];
     images: eachImage[];
+    content2: eachContent[];
+    images2: eachImage[];
     tools: eachTool[];
     skills: eachSkill[];
 }
@@ -81,6 +95,7 @@ interface eachContent {
 interface eachImage {
     url: string;
     size: string;
+    imageHeight: string;
     backgroundSize: string;
 }
 
