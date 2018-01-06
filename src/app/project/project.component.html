@@ -16,7 +16,15 @@
 
         <div *ngFor="let image of project.images"
              [ngClass]="{ 'image-half': image.size == 'half', 'image-full': image.size == 'full'} "
-             [ngStyle]="{'background-image': 'url(./assets/img/' + image.url + ')', 'background-size': image.backgroundSize}"></div>
+             [ngStyle]="{'background-image': 'url(./assets/img/' + image.url + ')', 'background-size': image.backgroundSize, 'height': image.imageHeight}"></div>
+
+        <p class="body" *ngFor="let content of project.content2">
+            {{ content.text }}
+        </p>
+
+        <div *ngFor="let image of project.images2"
+             [ngClass]="{ 'image-half': image.size == 'half', 'image-full': image.size == 'full'} "
+             [ngStyle]="{'background-image': 'url(./assets/img/' + image.url + ')', 'background-size': image.backgroundSize, 'height': image.imageHeight}"></div>
 
         <p class="body">
             <span class="body-label one-item">Time</span>

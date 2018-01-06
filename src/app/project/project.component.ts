@@ -10,6 +10,7 @@ import {Krake} from './development/krake';
 // design projects
 import {Spjikergoed} from './design/spijkergoed';
 import {Swan} from './design/swan';
+import {Yunhaseo} from './design/yunhaseo';
 
 // illustration projects
 import {Petiteaparis} from './illustration/petiteaparis';
@@ -60,6 +61,9 @@ export class ProjectComponent implements OnInit {
                 break;
             case 'swan':
                 this.projectData = Swan;
+                break;
+            case 'yunhaseo':
+                this.projectData = Yunhaseo;
                 break;
 
             // illustration projects
