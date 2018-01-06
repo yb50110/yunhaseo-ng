@@ -10,45 +10,49 @@ export const Yunhaseo: yunhaseo[] = [
         url: '',
         content: [
             {
-                text: 'As I was creating my resume and writing my cover letters for various companies, I was driven by the want to have them both look consistent so that it was blatantly obvious the two documents were from the same person. This lead to creating a simple document template that boldly shows my name in order to help it become memorable and quick to identify (out of the potential piles/list of other resumes).',
+                text: 'As I was creating my resume and writing my cover letters for various companies, I was driven by the want to have them both look consistent so that it was blatantly obvious the two documents were from the same person. Thus, I created a simple document template that boldly shows my name in order to help it become memorable and quick to identify (out of the potential piles/list of other resumes).',
             },
             {
-                text: 'This lead to my exploration of personal identity and personality. I challenge myself to create a logo and a website that visually defines who I am and what I value.'
+                text: 'This lead to my exploration of personal identity and personality. I challenged myself to create a logo and a website that visually defines who I am and what I value.'
             },
         ],
         images: [
-            // {
-            //     url: 'yunhaseo/Logo-sketch-outline.JPG',
-            //     size: 'full',
-            //     backgroundSize: 'cover'
-            // },
             {
-                url: 'yunhaseo/yunhaseo-bcard_letter.png',
-                size: 'full',
-                imageHeight: '530px',
-                backgroundSize: 'cover'
+                url: 'yunhaseo/letter.png',
+                size: 'half',
+                imageHeight: '210px',
+                backgroundSize: 'contain'
+            },
+            {
+                url: 'yunhaseo/cards.png',
+                size: 'half',
+                imageHeight: '210px',
+                backgroundSize: 'contain'
             },
         ],
         content2: [
             {
-                text: 'To represent my Korean background, I selected the colors black and red and a serif font as they are reminiscent of a traditional Asian stamp as well as the brushstroke of Asian characters. The generous white spaces are perfect example for my preference for minimalism, simplicity, and lots of breathing room.'
+                text: 'To represent my Korean background, I selected the colors black and red and a serif font as they are reminiscent of a traditional Asian stamp as well as the brushstroke of the Asian characters. The generous white spaces are perfect example for my preference for minimalism, simplicity, and lots of breathing room.'
             },
             {
-                text: 'I began my logo creation by creating numerous sketches and was traced and modified on Adobe Illustrator. The logo represents a traditional Korean stamp; however, instead of the usual Chinese characters, I used Korean characters to write my name. As most of my audience would be American, by intentionally using Korean, I have made my logo more a image rather than a text.'
+                text: 'I began my logo creation by sketching numerous ideas, which wws then traced and modified on Adobe Illustrator. The logo represents a traditional Korean stamp; however, instead of the usual Chinese characters, I used Korean characters to write my name. As most of my audience would be American, by intentionally using Korean, I have made my logo more of a image rather than a text.'
             },
+            {
+                text: 'I later programmed my website design into this website using the Angular 5 Javascript framework along with SCSS.'
+            }
         ],
         images2: [
             {
                 url: 'yunhaseo/yunhaseo-phone.png',
                 size: 'half',
                 imageHeight: '',
-                backgroundSize: 'cover'
+                backgroundSize: 'contain'
             },
             {
                 url: 'yunhaseo/yunhaseo-phone-2.png',
                 size: 'half',
                 imageHeight: '',
-                backgroundSize: 'cover'
+                backgroundSize: 'contain'
             }
         ],
         tools: [
