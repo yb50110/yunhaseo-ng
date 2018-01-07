@@ -14,6 +14,7 @@ import {Yunhaseo} from './design/yunhaseo';
 
 // illustration projects
 import {Petiteaparis} from './illustration/petiteaparis';
+import {Selfportraiterik} from './illustration/selfportrait-erik';
 
 @Component({
     selector: 'app-project',
@@ -69,6 +70,9 @@ export class ProjectComponent implements OnInit {
             // illustration projects
             case 'petiteaparis':
                 this.projectData = Petiteaparis;
+                break;
+            case 'selfportrait-erik':
+                this.projectData = Selfportraiterik;
                 break;
         }
     }

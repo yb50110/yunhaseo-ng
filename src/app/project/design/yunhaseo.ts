@@ -5,7 +5,7 @@ export const Yunhaseo: yunhaseo[] = [
         mainImageSize: 'contain',
         title: 'Personal Branding',
         year: '2017',
-        company: 'Passion Project',
+        company: 'Personal Project',
         role: 'Graphic Designer',
         url: '',
         content: [
