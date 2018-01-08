@@ -10,10 +10,10 @@ export const Safehr: safehr[] = [
         url: 'http://safehrapp.b507.net/',
         content: [
             {
-                text: 'Perhaps the largest and most complex project I have been a part of, SAFEHR is a three-year old and currently running project that includes an EHR and a content management system meant for use in the simulation labs of the Minnesota State University, Mankato School of Nursing (Glenn taylor institute).',
+                text: 'Perhaps the largest and most complex project I have been a part of, Simulation Analytics Family-Focused Electronic Health Record (SAFEHR) is a three-year old and currently running project that includes an EHR and a content management system meant for use in the simulation labs of the Minnesota State University, Mankato School of Nursing (Glenn Taylor Institute).',
             },
             {
-                text: 'The SAFEHR App is meant for classroom assignment and simulation use. It includes an Electronic Health Record (EHR) system with a focus on the family aspect of the patient, including the Family Constructs, Genogram and Ecomap systems that tracks the families and emotional connections of the patient.',
+                text: 'The SAFEHR App is meant for classroom assignment and simulation use. It includes an Electronic Health Record system with a focus on the family aspect of the patient, including the Family Constructs, Genogram and Ecomap systems that tracks the families and emotional connections of the patient.',
             },
         ],
         images: [

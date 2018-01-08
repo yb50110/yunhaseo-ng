@@ -53,8 +53,8 @@
             <span *ngFor="let skill of project.skills">{{ skill.description }}<br></span>
             <span class="clearfix"></span>
 
-            <span class="body-label one-item" *ngIf="project.url !== ''">Skills</span>
-            <span *ngIf="project.url !== ''"><a href="{{ project.url }}">(click me!)</a></span>
+            <span class="body-label one-item" *ngIf="project.url !== ''">Url</span>
+            <span *ngIf="project.url !== ''"><a href="{{ project.url }}">{{ project.url }}</a></span>
         </p>
     </div>
 </div>

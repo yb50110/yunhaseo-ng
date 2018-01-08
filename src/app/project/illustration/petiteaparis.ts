@@ -10,7 +10,7 @@ export const Petiteaparis: petiteaparis[] = [
         url: '',
         content: [
             {
-                text: 'A small, local clothing business of Velp, Netherlands was in need of an illustration that represented her clothing and that could be used throughout her store as a decorative element. She targeted women in their late 20’s and early 20’s and displayed a sense of elegance and modernism.',
+                text: 'A small, local clothing business of Velp, Netherlands was in need of an illustration that represented her clothing and that could be used throughout her store as a decorative element. She targeted women in their late 20s and early 30s and displayed a sense of elegance and modernism.',
             },
             {
                 text: 'Through carefully observing her clothing, and after a few iterations of feedback, this illustration was selected as the final piece.',
@@ -20,7 +20,7 @@ export const Petiteaparis: petiteaparis[] = [
             {
                 url: 'petiteaparis/sketch.jpg',
                 size: 'full',
-                imageHeight: '',
+                imageHeight: '350px',
                 backgroundSize: 'cover'
             },
         ],
@@ -33,7 +33,7 @@ export const Petiteaparis: petiteaparis[] = [
             {
                 url: 'petiteaparis/proof.png',
                 size: 'full',
-                imageHeight: '',
+                imageHeight: '580px',
                 backgroundSize: 'cover'
             }
         ],
