@@ -6,7 +6,7 @@ export const Pepoints: pepoints[] = [
         title: 'PE Points Web Application',
         year: '2016',
         company: 'B302: A Creative Media Mob',
-        role: 'Front-end Developer',
+        role: 'Frontend Developer',
         url: '',
         content: [
             {
