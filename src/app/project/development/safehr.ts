@@ -6,7 +6,7 @@ export const Safehr: safehr[] = [
         title: 'SAFEHR Portal and App',
         year: '2017 - Present',
         company: 'B507: A Creative Media Mob',
-        role: 'Front-end Developer',
+        role: 'Frontend Developer',
         url: 'http://safehrapp.b507.net/',
         content: [
             {

@@ -6,7 +6,7 @@ export const Krake: krake[] = [
         title: 'Project Krake Wordpress Site',
         year: '2016',
         company: 'B302: A Creative Media Mob',
-        role: 'Front-end Developer',
+        role: 'Frontend Developer',
         url: 'https://project-krake.eu/',
         content: [
             {
