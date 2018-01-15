@@ -24,6 +24,9 @@ export const Spjikergoed: spijkergoed[] = [
         content2: [
             {
                 text: 'Thus, the creative solution for their branding needs was to directly show the hape of a nail but allude to clothing through the sewn marks. Various marks and gaphical elements were created.',
+            },
+            {
+                text: 'In addition, this was my first project to work with non-native English speaking, Dutch clients. Because of this language barrier, I had to communicate with our Project Manager (also Dutch) to translate the message to the clients. Nevertheless, the project was completed successfully even with this inconvenience.'
             }
         ],
         images2: [
