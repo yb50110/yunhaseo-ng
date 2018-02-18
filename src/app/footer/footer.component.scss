@@ -10,11 +10,22 @@ footer {
   font-size: 0.6em;
   color: #adadad;
   bottom: 65px;
-  left: -55px;
+  left: -50px;
+
+  .footer-links {
+    position: absolute;
+    width: 100px;
+    left: 155px;
+    bottom: 0;
+  }
 
   @media screen and (min-width: 1200px) {
     transform: none;
     bottom: 40px;
     left: 40px;
+
+    .footer-links {
+      position: static;
+    }
   }
 }
