@@ -8,9 +8,9 @@ import {Safehr} from './development/safehr';
 import {Krake} from './development/krake';
 import {Toolgle} from './development/toolgle';
 import {Ourfuturehealth} from './development/ourfuturehealth';
-// import {Beyondthegalaxy} from './development/beyondthegalaxy.ts';
-// import {Mdeb} from './development/mdeb.ts';
-// import {Techniekpact} from './development/techniekpact.ts';
+import {Beyondthegalaxy} from './development/beyondthegalaxy';
+// import {Mdeb} from './development/mdeb';
+// import {Techniekpact} from './development/techniekpact';
 
 // design projects
 import {Spjikergoed} from './design/spijkergoed';
@@ -66,9 +66,9 @@ export class ProjectComponent implements OnInit {
             case 'ourfuturehealth':
                 this.projectData = Ourfuturehealth;
                 break;
-            // case 'beyondthegalaxy':
-            //     this.projectData = Beyondthegalaxy;
-            //     break;
+            case 'beyondthegalaxy':
+                this.projectData = Beyondthegalaxy;
+                break;
             // case 'mdeb':
             //     this.projectData = Mdeb;
             //     break;
