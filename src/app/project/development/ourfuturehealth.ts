@@ -26,7 +26,7 @@ export const Ourfuturehealth: ourfuturehealth[] = [
         ],
         content2: [
             {
-                text: 'In addition, I have learned to work on projects with existing and functional code. This site was originally built on Wordpress and implemented a free template. Custom CSS was implemented to make small changes that added up to improve the aesthetics of the site greatly.',
+                text: 'In addition, I have learned to work on projects with existing and functional code. This site was originally built on Wordpress and used a free template. Custom CSS was implemented to make small changes that added up to improve the aesthetics of the site greatly.',
             },
             {
                 text: 'The following images show the changes that have been applied to the styling to make for a better viewing on the mobile home screen:'
