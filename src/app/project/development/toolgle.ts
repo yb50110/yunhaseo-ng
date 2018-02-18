@@ -3,7 +3,7 @@ export const Toolgle: toolgle[] = [
         category: 'development',
         mainImageUrl: 'toolgle/main.png',
         mainImageSize: 'contain',
-        title: 'Toolgle Website',
+        title: 'Toolgle Site',
         year: '2016',
         company: 'B302: A Creative Media Mob',
         role: 'Frontend Developer',
