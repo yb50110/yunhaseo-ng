@@ -23,6 +23,7 @@ $text-body: 0.9em;
 $text-small: 0.8em;
 
 $desktop: 1200px;
+$tablet: 768px;
 
 // -------------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------------
@@ -55,7 +56,7 @@ body {
   background: #ffffff;
   margin: 0;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     position: relative;
     width: 1000px;
     margin: auto;
@@ -80,6 +81,14 @@ h3 {
   font-family: 'Lora', serif;
   font-size: $text-small;
   font-weight: 700;
+}
+
+.home-component-wrapper {
+  width: calc(100% + 15px);
+
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+  }
 }
 
 

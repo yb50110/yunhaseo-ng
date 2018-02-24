@@ -3,7 +3,7 @@ export const Ourfuturehealth: ourfuturehealth[] = [
         category: 'development',
         mainImageUrl: 'ourfuturehealth/desktop-home.png',
         mainImageSize: 'contain',
-        title: 'Our Future Health Site Update',
+        title: 'Our Future Health Site',
         year: '2016',
         company: 'B302: A Creative Media Mob',
         role: 'Frontend Developer',
@@ -13,7 +13,7 @@ export const Ourfuturehealth: ourfuturehealth[] = [
                 text: 'The Our Future Health Conference is a large-scale conference began in 2016 for domestic and international speakers and guests to gather to discuss future of health care and improving its sustainability and affordability for all patients. This site that I worked for was for the 2016 conference, and some updates have been made since to accommodate for the upcoming 2017 conference.'
             },
             {
-                text: 'This update in the styling was successfully completed even without a design or a wireframe. Our client wanted the site to implement the new logo that was created and have to cleaned up to reduce clutter and improve readability. Because the conference was happening rather soon, I had to work under tight deadlines and mounting pressure.'
+                text: 'Although, this update in the styling was completed without a definitive design, it was completed with high satisfaction from the client. Our client wanted the site to implement the new logo that was created and have their existing site cleaned up to reduce clutter and improve readability. Because the conference was happening rather soon, I had to work under tight deadlines and mounting pressure.'
             }
         ],
         images: [

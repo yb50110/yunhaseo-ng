@@ -16,14 +16,15 @@
   .project-group-list {
     margin: 10px 15px 10px 0;
     display: inline-block;
-    width: 100%;
+    vertical-align: top;
+    width: 80%;
 
     &:last-of-type {
       margin-right: 0;
     }
 
     @media screen and (min-width: 768px) {
-      width: calc((100% / 3) - 30px);
+      width: calc((100% / 3) - 25px);
     }
 
     .project-group-image {
@@ -31,11 +32,28 @@
       background-position: center;
       background-size: contain;
       background-color: $gray;
-      height: 225px;
+      box-shadow: 0;
+      height: 180px;
       width: 100%;
+
+      &:hover {
+        // top shadow is a bit darker
+        //box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.1), 0px 6px 10px 0px rgba(0, 0, 0, 0.1), 0px 1px 18px 0px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s;
+      }
+
+      @media screen and (min-width: 1200px) {
+        height: 225px;
+      }
     }
     .project-group-title {
+      font-size: 1em;
       color: $red;
+
+      @media screen and (min-width: 1200px) {
+        font-size: 1.25em;
+      }
     }
   }
 }
