@@ -10,7 +10,7 @@ export const Swan: swan[] = [
         url: '',
         content: [
             {
-                text: 'This logo was created for a start-up described to be the "User of housekeeping," involving an app that would allow people to quickly connect and search for others who could clean and take care of their homes. As this app is called "Swan," the logo had been design to be clearly representative of a swan.' ,
+                text: 'This logo was created for a start-up described to be the "Uber of housekeeping," involving an app that would allow people to quickly connect and search for others who could clean and take care of their homes. As this app is called "Swan," the logo had been design to be clearly representative of a swan.' ,
             },
             {
                 text: 'To create a unique and memorable icon, the "S" of "Swan" had been shaped similar to a swan. Because this service would involve other people to enter homes of the users, a sense of trustworthiness as well as openness must be established right away. Thus, the colors were selected with careful thought; the soft pink was used to form a sense of serenity and fanciness, while the contrasting dark blue creates a feeling of trustworthiness and solidity.',
