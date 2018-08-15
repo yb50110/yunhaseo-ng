@@ -19,9 +19,9 @@ import {B507MarketingHandout} from './design/b507-marketing-handout';
 import {Spjikergoed} from './design/spijkergoed';
 import {Swan} from './design/swan';
 import {Yunhaseo} from './design/yunhaseo';
+import {Otp} from './design/otp';
 // mnamp infographic
 // noname clinic
-// otp redesign 2
 // this
 
 // illustration projects
@@ -96,6 +96,9 @@ export class ProjectComponent implements OnInit {
                 break;
             case 'yunhaseo':
                 this.projectData = Yunhaseo;
+                break;
+            case 'otp':
+                this.projectData = Otp;
                 break;
 
             // illustration projects
