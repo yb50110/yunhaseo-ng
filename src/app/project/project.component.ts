@@ -12,8 +12,8 @@ import {Beyondthegalaxy} from './development/beyondthegalaxy';
 // import {Mdeb} from './development/mdeb';
 // import {Techniekpact} from './development/techniekpact';
 // import UMC
-// this
 // THE NEW FUCKING BURO WEBSITE!!
+// walk of waste: minor dev and mostly documentor
 
 // design projects
 import {B507MarketingHandout} from './design/b507-marketing-handout';
@@ -28,7 +28,7 @@ import {Nonameclinic} from './design/noname-clinic';
 // illustration projects
 import {Petiteaparis} from './illustration/petiteaparis';
 import {Selfportraiterik} from './illustration/selfportrait-erik';
-// lost-crayons
+import {Lostcrayons} from './illustration/lost-crayons';
 
 @Component({
     selector: 'app-project',
@@ -111,6 +111,9 @@ export class ProjectComponent implements OnInit {
                 break;
             case 'selfportrait-erik':
                 this.projectData = Selfportraiterik;
+                break;
+            case 'lost-crayons':
+                this.projectData = Lostcrayons;
                 break;
         }
     }

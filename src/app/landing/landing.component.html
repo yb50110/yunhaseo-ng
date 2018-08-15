@@ -88,6 +88,11 @@
             <a (click)="toggleShow('illustration')" [ngClass]="{ 'open' : show_illustration }"><h1>illustration</h1></a>
             <ul class="project-group" *ngIf="show_illustration" [@fadeAnimation]="">
 
+                <li class="project-group-list" [routerLink]="['/', 'projects', 'lost-crayons']">
+                    <div class="project-group-image"
+                         style="background-image: url('./assets/img/lost-crayons/title.jpg');background-size: cover;"></div>
+                    <h2 class="project-group-title">Lost-Crayons Comic</h2>
+                </li>
                 <li class="project-group-list" [routerLink]="['/', 'projects', 'petiteaparis']">
                     <div class="project-group-image"
                          style="background-image: url('./assets/img/petiteaparis/main.jpg');background-position: -145px -30px;background-size: 200%;"></div>
