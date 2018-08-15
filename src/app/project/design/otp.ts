@@ -4,7 +4,7 @@ export const Otp: otp[] = [
         mainImageUrl: 'otp/otp-silver-main.png',
         mainImageSize: 'contain',
         title: 'Online Tutoring Portal Redesign',
-        year: '2017',
+        year: '2018',
         company: 'B507: A Creative Media Mob',
         role: 'Graphic Designer',
         url: '',

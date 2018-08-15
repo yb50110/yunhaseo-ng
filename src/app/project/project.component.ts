@@ -13,6 +13,7 @@ import {Beyondthegalaxy} from './development/beyondthegalaxy';
 // import {Techniekpact} from './development/techniekpact';
 // import UMC
 // this
+// THE NEW FUCKING BURO WEBSITE!!
 
 // design projects
 import {B507MarketingHandout} from './design/b507-marketing-handout';
@@ -20,8 +21,8 @@ import {Spjikergoed} from './design/spijkergoed';
 import {Swan} from './design/swan';
 import {Yunhaseo} from './design/yunhaseo';
 import {Otp} from './design/otp';
+import {Nonameclinic} from './design/noname-clinic';
 // mnamp infographic
-// noname clinic
 // this
 
 // illustration projects
@@ -99,6 +100,9 @@ export class ProjectComponent implements OnInit {
                 break;
             case 'otp':
                 this.projectData = Otp;
+                break;
+            case 'nonameclinic':
+                this.projectData = Nonameclinic;
                 break;
 
             // illustration projects
