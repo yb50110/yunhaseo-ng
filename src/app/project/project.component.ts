@@ -11,15 +11,23 @@ import {Ourfuturehealth} from './development/ourfuturehealth';
 import {Beyondthegalaxy} from './development/beyondthegalaxy';
 // import {Mdeb} from './development/mdeb';
 // import {Techniekpact} from './development/techniekpact';
+// import UMC
+// this
 
 // design projects
+import {B507MarketingHandout} from './design/b507-marketing-handout';
 import {Spjikergoed} from './design/spijkergoed';
 import {Swan} from './design/swan';
 import {Yunhaseo} from './design/yunhaseo';
+// mnamp infographic
+// noname clinic
+// otp redesign 2
+// this
 
 // illustration projects
 import {Petiteaparis} from './illustration/petiteaparis';
 import {Selfportraiterik} from './illustration/selfportrait-erik';
+// lost-crayons
 
 @Component({
     selector: 'app-project',
@@ -77,6 +85,9 @@ export class ProjectComponent implements OnInit {
             //     break;
 
             // design projects
+            case 'b507-marketing-handout':
+                this.projectData = B507MarketingHandout;
+                break;
             case 'spijkergoed':
                 this.projectData = Spjikergoed;
                 break;

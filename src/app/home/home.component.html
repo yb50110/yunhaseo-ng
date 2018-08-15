@@ -50,6 +50,11 @@
                 <a (click)="toggleShow('design')" [ngClass]="{ 'open' : show_design }"><h1>design</h1></a>
                 <ul class="project-group" *ngIf="show_design" [@fadeAnimation]="">
 
+                    <li class="project-group-list" [routerLink]="['/', 'projects', 'b507-marketing-handout']">
+                        <div class="project-group-image"
+                             style="background-image: url('./assets/img/b507-marketing-handout/b507-handout.jpg');background-size: cover;"></div>
+                        <h2 class="project-group-title">B507 Marketing Handout</h2>
+                    </li>
                     <li class="project-group-list" [routerLink]="['/', 'projects', 'spijkergoed']">
                         <div class="project-group-image"
                              style="background-image: url('./assets/img/spijkergoed/main.jpg');background-size: cover;"></div>
