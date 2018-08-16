@@ -20,13 +20,13 @@ export const Yunhaseo: yunhaseo[] = [
             {
                 url: 'yunhaseo/letter.png',
                 size: 'half',
-                imageHeight: '210px',
+                imageHeight: '',
                 backgroundSize: 'contain'
             },
             {
                 url: 'yunhaseo/cards.png',
                 size: 'half',
-                imageHeight: '210px',
+                imageHeight: '',
                 backgroundSize: 'contain'
             },
         ],
