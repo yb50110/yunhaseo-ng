@@ -8,6 +8,11 @@
             <a (click)="toggleShow('development')" [ngClass]="{ 'open' : show_development }"><h1>development</h1></a>
             <ul class="project-group" *ngIf="show_development" [@fadeAnimation]="">
 
+                <li class="project-group-list" [routerLink]="['/', 'projects', 'burowebsite']">
+                    <div class="project-group-image"
+                         style="background-image: url('./assets/img/buro-website/home.png');"></div>
+                    <h2 class="project-group-title">B507 & B302 Website Update</h2>
+                </li>
                 <li class="project-group-list" [routerLink]="['/', 'projects', 'pepoints']">
                     <div class="project-group-image"
                          style="background-image: url('./assets/img/pepoints/main.png');"></div>

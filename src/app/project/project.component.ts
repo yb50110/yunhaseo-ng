@@ -9,11 +9,8 @@ import {Krake} from './development/krake';
 import {Toolgle} from './development/toolgle';
 import {Ourfuturehealth} from './development/ourfuturehealth';
 import {Beyondthegalaxy} from './development/beyondthegalaxy';
-// import {Mdeb} from './development/mdeb';
-// import {Techniekpact} from './development/techniekpact';
+import {Burowebsite} from './development/burowebsite';
 // import UMC
-// THE NEW FUCKING BURO WEBSITE!!
-// walk of waste: minor dev and mostly documentor
 
 // design projects
 import {B507MarketingHandout} from './design/b507-marketing-handout';
@@ -78,9 +75,9 @@ export class ProjectComponent implements OnInit {
             case 'beyondthegalaxy':
                 this.projectData = Beyondthegalaxy;
                 break;
-            // case 'mdeb':
-            //     this.projectData = Mdeb;
-            //     break;
+            case 'burowebsite':
+                this.projectData = Burowebsite;
+                break;
             // case 'techniekpact':
             //     this.projectData = Techniekpact;
             //     break;
